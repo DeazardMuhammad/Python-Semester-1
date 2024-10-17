@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class 1 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Masukkan nilai pertama: ");
+        double nilai1 = input.nextDouble();
+
+        System.out.print("Masukkan nilai kedua: ");
+        double nilai2 = input.nextDouble();
+
+        if (nilai1 < nilai2) {
+            System.out.println("Nilai pertama lebih kecil dari nilai kedua.");
+        } else if (nilai1 > nilai2) {
+            System.out.println("Nilai pertama lebih besar dari nilai kedua.");
+        } else {
+            System.out.println("Kedua nilai sama besar.");
+        }
+        
+        input.close();
+    }
+}
